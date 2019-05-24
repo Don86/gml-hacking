@@ -1,7 +1,7 @@
 # generated with VANTED V2.6.5 at Fri May 24 15:40:26 AEST 2019
 graph [
   axis_color "#c0c0c0"
-  chart_color_line_names "1: W30P/W 30 (W30P);2: W10P/W 10 (W10P);3: R30P/R 30 (R30P);4: R10P/R 10 (R10P);"
+  chart_color_line_names "1: X1/G1 (X1);2: X2/G2 (X2);3: X3/G3 (X3);4: X4/G4 (X4);"
   chart_colors "0,0,0,255:0,0,0,255;64,64,64,255:0,0,0,255;128,128,128,255:0,0,0,255;192,192,192,255:0,0,0,255"
   connectPriorItems "true"
   graphbackgroundcolor "#ffffff"
