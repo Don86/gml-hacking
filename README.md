@@ -1,8 +1,13 @@
 # gml-hacking
 How to hack .gml (Geographical Markup Language) files directly. Throughout this document, *"node"* are the rectangles, and *"edges"* are the lines connecting them.
 
+There are 2 example `.gml` files in this repo:
+1. `three-node.gml` - contains a network with 3 nodes (actually Glucose, gluconate and G6P, but these node labels are arbitrary)
+2. `three-node-mapped.gml` - contains a network with some dummy bar chart values mapped to each node. 
+
 # `.gml` format
-A skeleton of the `.gml` file format looks like this (a very small graph with only 2 nodes and 1 edge connecting them):
+
+`.gml` files completely specify the network (which nodes are connected to which other nodes, direction of connection, certain properties associated with each node, etc.). They can be used in both `Vanted` and `Cytoscape`. A skeleton of the `.gml` file format looks like this (a very small graph with only 2 nodes and 1 edge connecting them):
 
 ```
 graph [
