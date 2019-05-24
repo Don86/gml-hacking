@@ -3,7 +3,7 @@ How to hack .gml (Geographical Markup Language) files directly. Throughout this 
 
 There are 2 example `.gml` files in this repo:
 1. `three-node.gml` - contains a network with 3 nodes (actually Glucose, gluconate and G6P, but these node labels are arbitrary)
-2. `three-node-mapped.gml` - contains a network with some dummy bar chart values mapped to each node. 
+2. `three-node-mapped.gml` - contains a network with some dummy bar chart values mapped to each node. The most important difference from `three-node.gml` is the presence of a `mapping` attribute in each `node`, corresponding to the appearance of a bar chart in each node. 
 
 # `.gml` format
 
@@ -32,7 +32,7 @@ That is:
 * The **graph** encloses all **nodes** and **edges** within square brackets.
 * Before nodes and edges are specified, there'll be a list of global attributes being specified. These are more relevant if there are charts present, e.g. chart border colour and thickness, chart font sizes, etc..
 * Each **node** will similarly have a list of attributes associated with it (e.g. position, border thickness, border colour...). See below for important node attributes. 
-* Each **edge** will similarly have a list of attributes associated with that edge.
+* Each **edge** will similarly have a list of attributes associated with that edge. 
 
 ## Global attributes
 
@@ -88,4 +88,6 @@ Description (of those that I've figured out):
 
 ## Edge attributes
 
-(In progress)
+* **id** - A unique number associated with each each. Note that nodes and edges won't share ids. 
+* **source** and **target** - the node ids that the particular edge is connecting (to and from). 
+
